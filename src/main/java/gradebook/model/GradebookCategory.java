@@ -39,4 +39,9 @@ public class GradebookCategory
     {
         return weight;
     }
+
+    public Integer getId()
+    {
+        return dataStoreID;
+    }
 }
