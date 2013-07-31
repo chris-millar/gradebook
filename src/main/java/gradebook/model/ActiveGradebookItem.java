@@ -7,9 +7,9 @@ public abstract class ActiveGradebookItem extends GradebookItem
         super(dataStoreID);
     }
     
-    public abstract Course createNew();
+    public abstract GradebookItem createNew();
     
-    public abstract Course findById(Integer id);
+    public abstract GradebookItem findById(Integer id);
     
     public abstract void save();
 }

@@ -7,9 +7,9 @@ public abstract class ActiveStudent extends Student
         super(dataStoreID);
     }
     
-    public abstract Course createNew();
+    public abstract Student createNew();
     
-    public abstract Course findById(Integer id);
+    public abstract Student findById(Integer id);
     
     public abstract void save();
 }

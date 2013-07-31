@@ -7,9 +7,9 @@ public abstract class ActiveGradingScheme extends GradingScheme
         super(dataStoreID);
     }
     
-    public abstract Course createNew();
+    public abstract GradingScheme createNew();
     
-    public abstract Course findById(Integer id);
+    public abstract GradingScheme findById(Integer id);
     
     public abstract void save();
 }

@@ -7,9 +7,9 @@ public abstract class ActiveSection extends Section
         super(dataStoreID);
     }
     
-    public abstract Course createNew();
+    public abstract Section createNew();
     
-    public abstract Course findById(Integer id);
+    public abstract Section findById(Integer id);
     
     public abstract void save();
 }

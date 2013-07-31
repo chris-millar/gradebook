@@ -7,9 +7,9 @@ public abstract class ActiveGradebookCategory extends GradebookCategory
         super(dataStoreID);
     }
     
-    public abstract Course createNew();
+    public abstract GradebookCategory createNew();
     
-    public abstract Course findById(Integer id);
+    public abstract GradebookCategory findById(Integer id);
     
     public abstract void save();
 }
