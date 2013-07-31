@@ -1,9 +1,9 @@
-Testsuite: gradebook.model.ModelTest
+Testsuite: gradebook.model.GradebookCategoryTest
 Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
 
 	Caused an ERROR
-gradebook.model.ModelTest
-java.lang.ClassNotFoundException: gradebook.model.ModelTest
+gradebook.model.GradebookCategoryTest
+java.lang.ClassNotFoundException: gradebook.model.GradebookCategoryTest
 	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
 	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
 	at java.security.AccessController.doPrivileged(Native Method)
