@@ -1,3 +1,8 @@
+NOTE
+====
+- I changed the left-curly-bracket CheckStyle 'format option' to be "nl" (new line)
+
+
 Gradebook
 =========
 
