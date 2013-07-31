@@ -1,8 +1,15 @@
 package main.java.gradebook.model;
 
+/**
+ * Interface for the methods to get the average score and
+ * letter grade of either a Course, Class, Section, or Student.
+ * Plays the role of Component in the Composite Pattern.
+ * @author Steven Millar
+ *
+ */
 public interface GradeReport
 {
-    public Integer getAvgScore(GradingScheme algorithm);
-    
-    public LetterGrade getLetterGrade(GradingScheme algorithm);
+    Integer getAvgScore(GradingScheme gradeScheme);
+
+    LetterGrade getLetterGrade(GradingScheme gradeScheme);
 }
