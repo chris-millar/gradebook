@@ -1,4 +1,4 @@
-package main.java.gradebook.model;
+package gradebook.model;
 
 /**
  * Enum for the acceptable types of letter grades.

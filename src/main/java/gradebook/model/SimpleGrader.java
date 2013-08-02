@@ -1,4 +1,4 @@
-package main.java.gradebook.model;
+package gradebook.model;
 
 /**
  * Simple class with static 'determineLetterGrade()' method

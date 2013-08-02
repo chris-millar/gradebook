@@ -1,4 +1,4 @@
-package main.java.gradebook.model;
+package gradebook.model;
 
 /**
  * Factory methods for Student object.

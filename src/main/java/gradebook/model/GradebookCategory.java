@@ -1,4 +1,4 @@
-package main.java.gradebook.model;
+package gradebook.model;
 
 /**
  * a tag applied to GradebookItems to distinguish different types of

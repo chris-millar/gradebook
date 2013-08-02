@@ -1,13 +1,15 @@
-package test.java.gradebook.model;
+package gradebook.model;
 
-import main.java.gradebook.model.*;
 
 import static org.junit.Assert.*;
 import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+import org.junit.runners.Suite.SuiteClasses;
 import org.junit.runners.JUnit4;
 import org.junit.Test;
 
-@RunWith(JUnit4.class)
+//@RunWith(Suite.class)
+//@SuiteClasses({GradebookCategoryTest.class, GradebookTester.class })
 public class GradebookCategoryTest
 {
 

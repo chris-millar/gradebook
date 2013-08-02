@@ -1,4 +1,4 @@
-package main.java.gradebook.model;
+package gradebook.model;
 
 /**
  * A thing for which a student receives a score.
