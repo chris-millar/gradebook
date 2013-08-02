@@ -1,4 +1,4 @@
-package main.java.gradebook.model;
+package gradebook.model;
 
 import java.util.LinkedList;
 
@@ -71,9 +71,19 @@ public class Course implements GradeReport
         preReqCourses.add(preReq);
     }
 
+    public void setClassesOfThisCourse(LinkedList<Class> classes)
+    {
+        this.classesOfThisCourse = classes;
+    }
+
 
     public Integer getAvgScore(GradingScheme gradeScheme)
     {
+        if (classesOfThisCourse.isEmpty())
+        {
+            return 0;
+        }
+
         Integer sumOfSectionsAvgScores = 0;
 
         for (Class aClass : classesOfThisCourse)
@@ -87,6 +97,11 @@ public class Course implements GradeReport
 
     public LetterGrade getLetterGrade(GradingScheme gradeScheme)
     {
+        if (classesOfThisCourse.isEmpty())
+        {
+            return LetterGrade.F;
+        }
+
         Integer avgScore = getAvgScore(gradeScheme);
         LetterGrade grade = SimpleGrader.determineLetterGrade(avgScore);
         return grade;

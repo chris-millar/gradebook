@@ -1,4 +1,4 @@
-package main.java.gradebook.model;
+package gradebook.model;
 
 import java.util.HashMap;
 
@@ -57,12 +57,22 @@ public class Student implements GradeReport
 
     public Integer getAvgScore(GradingScheme gradeScheme)
     {
+        if (scores.isEmpty())
+        {
+            return 0;
+        }
+
         gradeScheme.setStudentItemScores(scores);
         return gradeScheme.calculateAvgScore();
     }
 
     public LetterGrade getLetterGrade(GradingScheme gradeScheme)
     {
+        if (scores.isEmpty())
+        {
+            return LetterGrade.F;
+        }
+
         gradeScheme.setStudentItemScores(scores);
         return gradeScheme.calculateLetterGrade();
     }

@@ -1,4 +1,4 @@
-package main.java.gradebook.model;
+package gradebook.model;
 
 import java.util.LinkedList;
 
@@ -37,6 +37,11 @@ public class Class implements GradeReport
 
     public Integer getAvgScore(GradingScheme gradeScheme)
     {
+        if (sectionsInClass.isEmpty())
+        {
+            return 0;
+        }
+
         Integer sumOfSectionsAvgScores = 0;
 
         for (Section section : sectionsInClass)
@@ -50,6 +55,11 @@ public class Class implements GradeReport
 
     public LetterGrade getLetterGrade(GradingScheme gradeScheme)
     {
+        if (sectionsInClass.isEmpty())
+        {
+            return LetterGrade.F;
+        }
+
         Integer avgScore = getAvgScore(gradeScheme);
         LetterGrade grade = SimpleGrader.determineLetterGrade(avgScore);
         return grade;
